@@ -1,0 +1,6 @@
+heroku:
+ stage: deploy
+ only:
+ - main
+ script:
+ - git push https://heroku:$HEROKU_API_KEY@git.heroku.com/olar-dev.git HEAD:main  
